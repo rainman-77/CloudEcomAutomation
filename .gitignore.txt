@@ -1,0 +1,11 @@
+# Ignore PyCharm settings
+.idea/
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore virtual environment
+venv/
