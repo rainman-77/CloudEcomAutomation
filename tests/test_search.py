@@ -1,9 +1,9 @@
 import pytest
 from pageobjects.home_page import HomePage
+from tests.base_test import BaseTest
 
 
-@pytest.mark.usefixtures("setup_and_teardown", "log_on_failure")
-class TestSearch:
+class TestSearch(BaseTest):
     def test_search_valid_product(self):
         home_page = HomePage(self.driver)
         search_page = home_page.search_for_product("HP")
