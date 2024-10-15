@@ -13,6 +13,7 @@ class LoginPage(BasePage):
     login_button_xpath = {"xpath": "//input[@value='Login']"}
     error_message_xpath = {"xpath": "//div[@id='account-login']/div[1]"}
 
+    # methods for basic actions
     def enter_email_address(self, email):
         self.type_into_element(email, self.email_field_id)
 
@@ -26,7 +27,7 @@ class LoginPage(BasePage):
     def is_error_message_displayed(self):
         return self.get_element_text(self.error_message_xpath)
 
-
+    # methods for high level actions
     def login_with_credentials(self, email, password):
         self.enter_email_address(email)
         self.enter_password(password)
