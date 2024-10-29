@@ -1,3 +1,5 @@
+import logging
+import os
 import allure
 import pytest
 from allure_commons.types import AttachmentType
@@ -9,6 +11,22 @@ from utilities import read_configurations as rc
 
 
 global driver
+
+
+# Logging setup for parallel execution
+def pytest_configure(config):
+    # Get the worker ID from the pytest-xdist environment
+    worker_id = os.environ.get('PYTEST_XDIST_WORKER', 'master')  # 'master' for single-threaded mode
+    log_file = f"logs/automation_worker_{worker_id}.log"
+
+    # Configure logging
+    logging.basicConfig(
+        filename=log_file,
+        level=logging.INFO,
+        format="%(asctime)s: %(levelname)s: %(message)s",
+        datefmt="%m/%d/%Y %I:%M:%S %p",
+    )
+    logging.info("....starting test setup....\n")
 
 
 @pytest.fixture()
@@ -39,11 +57,13 @@ def setup_and_teardown(request, worker_id):
 
     if exec_mode == 'standalone':
         browser = rc.read_configuration("basic info", "browser")  # uses config.ini to get specific browser instance
+        logging.info(f"Running test in '{browser_mode}-{exec_mode}' mode on '{browser}' browser in '{run_env}' environment")
 
     elif exec_mode == 'parallel':
         # worker specific browser will be selected like gw0-chrome,gw1-firefox,gw2-edge for even parallel execution
         browsers = ["chrome", "firefox", "edge"]
         browser = browsers[int(worker_id.lstrip("gw")) % len(browsers)]
+        logging.info(f"Running test in '{browser_mode}-{exec_mode}' mode on '{browser}' in '{run_env}' environment")
 
     if browser == 'chrome':
         options = ChromeOptions()
