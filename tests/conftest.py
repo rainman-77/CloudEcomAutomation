@@ -46,6 +46,30 @@ def pytest_runtest_makereport(item, call):
     return rep
 
 
+@pytest.fixture(scope="session")
+def get_account(worker_id):
+    # Map each worker to an account using its ID
+    accounts = [
+        {"email": "test_1@gmail.com", "password": "qwerty456"},
+        {"email": "test_2@gmail.com", "password": "qwerty456"},
+        {"email": "test_3@gmail.com", "password": "qwerty456"},
+    ]
+
+    # Detect execution mode (standalone or parallel)
+    exec_mode = rc.read_configuration("basic info", "execution")
+
+    if exec_mode == "standalone":
+        account = accounts[0]  # Use the first account in standalone mode
+        logging.info(f"Worker '{worker_id}' is using account '{account['email']}'")
+        return account
+
+    # Parallel mode: Map worker_id to an account
+    account_index = int(worker_id.replace("gw", ""))  # Extract worker number
+    account = accounts[account_index]
+    logging.info(f"Worker '{worker_id}' is using account '{account['email']}'")
+    return account
+
+
 @pytest.fixture()
 def setup_and_teardown(request, worker_id):
     global driver
