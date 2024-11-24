@@ -37,10 +37,14 @@ def get_all_excel_data(sheet_name):
     _, sheet = load_workbook_and_sheet(sheet_name)
     total_rows = sheet.max_row
     total_cols = sheet.max_column
+
+    # Get the headers from the first row
+    headers = [sheet.cell(1, c).value for c in range(1, total_cols + 1)]
+
+    # Read data and map it to the headers
     final_list = []
-    for r in range(2, total_rows + 1):
-        row_list = []
-        for c in range(1, total_cols + 1):
-            row_list.append(sheet.cell(r, c).value)
-        final_list.append(row_list)
-    return final_list       # list of lists is the output
+    for r in range(2, total_rows + 1):  # Start from the second row for data
+        row_dict = {headers[c - 1]: sheet.cell(r, c).value for c in range(1, total_cols + 1)}
+        final_list.append(row_dict)
+
+    return final_list
