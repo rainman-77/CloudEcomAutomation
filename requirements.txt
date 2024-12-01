@@ -1,0 +1,19 @@
+# Amazon Linux 2023 AMI ec2 instance requires this particular urllib version
+urllib3==1.26.15
+
+# Core libraries
+selenium
+pytest
+
+# Pytest plugins
+pytest-html
+pytest-xdist
+pytest-metadata
+pytest-soft-assertions
+pytest-order
+
+# Reporting tools
+allure-pytest
+
+# Excel handling library
+openpyxl
