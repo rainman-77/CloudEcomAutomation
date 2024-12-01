@@ -127,4 +127,5 @@ class ProductSpecificPage(BasePage):
     # methods for high level actions
     def add_product_and_confirm_success_msg(self):
         self.add_product_to_cart()
+        time.sleep(1)
         return self.is_product_added_success_msg_displayed()
