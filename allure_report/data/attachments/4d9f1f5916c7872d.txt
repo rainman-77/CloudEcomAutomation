@@ -1,0 +1,4 @@
+[32mINFO    [0m root:conftest.py:69 Worker 'gw0' is using account 'test_1@gmail.com'
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'chrome' in 'local' environment
+[32mINFO    [0m root:test_add_products_to_cart.py:16 test_add_products_to_cart--> test_add_product_to_cart_without_mandatory_fields started
+[32mINFO    [0m root:test_add_products_to_cart.py:20 test_add_products_to_cart--> test_add_product_to_cart_without_mandatory_fields completed

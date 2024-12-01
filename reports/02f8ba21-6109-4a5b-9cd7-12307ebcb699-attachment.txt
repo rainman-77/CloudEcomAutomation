@@ -1,0 +1,4 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+[32mINFO    [0m root:test_shopping_cart.py:24 test_shopping_cart--> test_product_and_its_delivery_date_in_cart started
+[32mINFO    [0m root:cart_page.py:53 no of products added is 1 and no of cart products is 1
+[32mINFO    [0m root:test_shopping_cart.py:38 test_shopping_cart--> test_product_and_its_delivery_date_in_cart completed

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'chrome' in 'local' environment
+[32mINFO    [0m root:test_add_products_to_cart.py:23 test_add_products_to_cart--> test_add_date_mandatory_product_to_cart started
+[32mINFO    [0m root:test_add_products_to_cart.py:28 test_add_products_to_cart--> test_add_date_mandatory_product_to_cart completed

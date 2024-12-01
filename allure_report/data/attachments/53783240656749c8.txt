@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+[32mINFO    [0m root:test_checkout.py:13 test_checkout--> test_checkout_and_confirm_order_of_product started
+[32mINFO    [0m root:test_checkout.py:23 test_checkout--> test_checkout_and_confirm_order_of_product complted

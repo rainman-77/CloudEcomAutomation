@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+[32mINFO    [0m root:test_add_products_to_cart.py:38 test_add_products_to_cart--> test_add_out_of_stock_and_minimum_order_mandatory_product_to_cart started
+[32mINFO    [0m root:test_add_products_to_cart.py:43 test_add_products_to_cart--> test_add_out_of_stock_and_minimum_order_mandatory_product_to_cart completed

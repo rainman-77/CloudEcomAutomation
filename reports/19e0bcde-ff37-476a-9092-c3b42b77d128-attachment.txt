@@ -1,0 +1,4 @@
+[32mINFO    [0m root:conftest.py:69 Worker 'gw1' is using account 'test_2@gmail.com'
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+[32mINFO    [0m root:test_add_products_to_cart.py:31 test_add_products_to_cart--> test_add_out_of_stock_product_to_cart started
+[32mINFO    [0m root:test_add_products_to_cart.py:35 test_add_products_to_cart--> test_add_out_of_stock_product_to_cart completed

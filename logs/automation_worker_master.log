@@ -1,0 +1,64 @@
+11/30/2024 11:02:10 PM: INFO: ....starting test setup....
+
+11/30/2024 11:02:10 PM: INFO: Worker 'master' is using account 'test_1@gmail.com'
+11/30/2024 11:02:10 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:02:16 PM: INFO: test_add_products_to_cart--> test_add_product_to_cart_from_products_page started
+11/30/2024 11:02:19 PM: INFO: test_add_products_to_cart--> test_add_product_to_cart_from_products_page completed
+
+11/30/2024 11:02:21 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:02:24 PM: INFO: test_add_products_to_cart--> test_add_product_to_cart_without_mandatory_fields started
+11/30/2024 11:02:27 PM: INFO: test_add_products_to_cart--> test_add_product_to_cart_without_mandatory_fields completed
+
+11/30/2024 11:02:29 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:02:32 PM: INFO: test_add_products_to_cart--> test_add_date_mandatory_product_to_cart started
+11/30/2024 11:02:36 PM: INFO: test_add_products_to_cart--> test_add_date_mandatory_product_to_cart completed
+
+11/30/2024 11:02:38 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:02:40 PM: INFO: test_add_products_to_cart--> test_add_out_of_stock_product_to_cart started
+11/30/2024 11:02:43 PM: INFO: test_add_products_to_cart--> test_add_out_of_stock_product_to_cart completed
+
+11/30/2024 11:02:46 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:02:48 PM: INFO: test_add_products_to_cart--> test_add_out_of_stock_and_minimum_order_mandatory_product_to_cart started
+11/30/2024 11:03:02 PM: INFO: test_add_products_to_cart--> test_add_out_of_stock_and_minimum_order_mandatory_product_to_cart completed
+
+11/30/2024 11:03:04 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:03:07 PM: INFO: test_add_products_to_cart--> test_add_product_with_less_than_minimum_order_to_cart started
+11/30/2024 11:03:21 PM: INFO: test_add_products_to_cart--> test_add_product_with_less_than_minimum_order_to_cart completed
+
+11/30/2024 11:03:23 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:03:26 PM: INFO: test_shopping_cart--> test_products_added_from_product_page_in_cart started
+11/30/2024 11:03:38 PM: INFO: no of products added is 1 and no of cart products is 1
+11/30/2024 11:03:38 PM: INFO: test_shopping_cart--> test_products_added_from_product_page_in_cart completed
+
+11/30/2024 11:03:41 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:03:43 PM: INFO: test_shopping_cart--> test_products_added_from_product_page_in_cart started
+11/30/2024 11:03:48 PM: INFO: no of products added is 2 and no of cart products is 2
+11/30/2024 11:03:48 PM: INFO: test_shopping_cart--> test_products_added_from_product_page_in_cart completed
+
+11/30/2024 11:03:51 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:03:54 PM: INFO: test_shopping_cart--> test_product_and_its_delivery_date_in_cart started
+11/30/2024 11:04:03 PM: INFO: no of products added is 1 and no of cart products is 1
+11/30/2024 11:04:03 PM: INFO: test_shopping_cart--> test_product_and_its_delivery_date_in_cart completed
+
+11/30/2024 11:04:06 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:04:08 PM: INFO: test_shopping_cart--> test_out_of_stock_notification_in_cart started
+11/30/2024 11:04:17 PM: INFO: test_shopping_cart--> test_out_of_stock_notification_in_cart completed
+
+11/30/2024 11:04:20 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:04:22 PM: INFO: test_shopping_cart--> test_update_quantity_of_product_in_cart started
+11/30/2024 11:04:30 PM: INFO: test_shopping_cart--> test_update_quantity_of_product_in_cart completed
+
+11/30/2024 11:04:32 PM: INFO: Running test in 'headless-standalone' mode on 'chrome' browser in 'local' environment
+11/30/2024 11:04:35 PM: INFO: test_shopping_cart--> test_minimum_order_notification_in_cart started
+11/30/2024 11:04:56 PM: INFO: test_shopping_cart--> test_minimum_order_notification_in_cart completed
+
+11/30/2024 11:06:31 PM: INFO: ....starting test setup....
+
+11/30/2024 11:10:35 PM: INFO: ....starting test setup....
+
+11/30/2024 11:10:54 PM: INFO: ....starting test setup....
+
+11/30/2024 11:17:21 PM: INFO: ....starting test setup....
+
+11/30/2024 11:21:57 PM: INFO: ....starting test setup....
+

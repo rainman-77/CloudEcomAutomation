@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+[32mINFO    [0m root:test_register.py:11 test_register--> test_register_mandatory_fields started
+[32mINFO    [0m root:test_register.py:21 test_register--> test_register_mandatory_fields completed

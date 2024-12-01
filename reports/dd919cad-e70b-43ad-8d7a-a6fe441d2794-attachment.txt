@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'chrome' in 'local' environment
+[32mINFO    [0m root:test_login.py:33 test_login--> test_login_valid_mail_and_invalid_password started
+[32mINFO    [0m root:test_login.py:41 test_login--> test_login_valid_mail_and_invalid_password completed

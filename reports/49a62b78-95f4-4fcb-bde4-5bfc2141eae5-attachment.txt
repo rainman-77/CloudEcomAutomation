@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+[32mINFO    [0m root:test_login.py:12 test_login--> test_login_valid_cred started using test_2@gmail.com
+[32mINFO    [0m root:test_login.py:19 test_login--> test_login_valid_cred completed

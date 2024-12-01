@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+[32mINFO    [0m root:test_shopping_cart.py:63 test_shopping_cart--> test_minimum_order_notification_in_cart started
+[32mINFO    [0m root:test_shopping_cart.py:73 test_shopping_cart--> test_minimum_order_notification_in_cart completed

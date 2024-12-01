@@ -1,0 +1,37 @@
+11/30/2024 11:21:58 PM: INFO: ....starting test setup....
+
+11/30/2024 11:21:58 PM: INFO: Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+11/30/2024 11:22:05 PM: INFO: test_search--> test_search_empty_product started
+11/30/2024 11:22:06 PM: INFO: test_search--> test_search_empty_product completed
+
+11/30/2024 11:22:08 PM: INFO: Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+11/30/2024 11:22:15 PM: INFO: test_login--> test_login_valid_cred started using test_1@gmail.com
+11/30/2024 11:22:18 PM: INFO: test_login--> test_login_valid_cred completed
+
+11/30/2024 11:22:20 PM: INFO: Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+11/30/2024 11:22:28 PM: INFO: test_register--> test_register_all_fields started
+11/30/2024 11:22:32 PM: INFO: test_register--> test_register_all_fields completed
+
+11/30/2024 11:22:35 PM: INFO: Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+11/30/2024 11:22:42 PM: INFO: test_register--> test_register_existing_mail started
+11/30/2024 11:22:45 PM: INFO: test_register--> test_register_existing_mail completed
+
+11/30/2024 11:22:48 PM: INFO: Worker 'gw1' is using account 'test_2@gmail.com'
+11/30/2024 11:22:48 PM: INFO: Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+11/30/2024 11:22:55 PM: INFO: test_add_products_to_cart--> test_add_out_of_stock_product_to_cart started
+11/30/2024 11:23:00 PM: INFO: test_add_products_to_cart--> test_add_out_of_stock_product_to_cart completed
+
+11/30/2024 11:23:03 PM: INFO: Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+11/30/2024 11:23:09 PM: INFO: test_shopping_cart--> test_products_added_from_product_page_in_cart started
+11/30/2024 11:23:18 PM: INFO: no of products added is 2 and no of cart products is 2
+11/30/2024 11:23:18 PM: INFO: test_shopping_cart--> test_products_added_from_product_page_in_cart completed
+
+11/30/2024 11:23:20 PM: INFO: Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+11/30/2024 11:23:31 PM: INFO: test_shopping_cart--> test_product_and_its_delivery_date_in_cart started
+11/30/2024 11:23:47 PM: INFO: no of products added is 1 and no of cart products is 1
+11/30/2024 11:23:47 PM: INFO: test_shopping_cart--> test_product_and_its_delivery_date_in_cart completed
+
+11/30/2024 11:23:50 PM: INFO: Running test in 'headless-parallel' mode on 'firefox' in 'local' environment
+11/30/2024 11:23:56 PM: INFO: test_shopping_cart--> test_minimum_order_notification_in_cart started
+11/30/2024 11:25:00 PM: INFO: test_shopping_cart--> test_minimum_order_notification_in_cart completed
+

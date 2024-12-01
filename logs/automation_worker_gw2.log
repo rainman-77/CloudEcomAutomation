@@ -1,0 +1,44 @@
+11/30/2024 11:21:58 PM: INFO: ....starting test setup....
+
+11/30/2024 11:21:58 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:22:02 PM: INFO: test_login--> test_login_valid_cred started using test_2@gmail.com
+11/30/2024 11:22:03 PM: INFO: test_login--> test_login_valid_cred completed
+
+11/30/2024 11:22:06 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:22:09 PM: INFO: test_login--> test_login_valid_cred started using test_3@gmail.com
+11/30/2024 11:22:10 PM: INFO: test_login--> test_login_valid_cred completed
+
+11/30/2024 11:22:12 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:22:16 PM: INFO: test_login--> test_login_without_cred started
+11/30/2024 11:22:17 PM: INFO: test_login--> test_login_without_cred completed
+
+11/30/2024 11:22:23 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:22:27 PM: INFO: test_register--> test_register_mandatory_fields started
+11/30/2024 11:22:33 PM: INFO: test_register--> test_register_mandatory_fields completed
+
+11/30/2024 11:22:36 PM: INFO: Worker 'gw2' is using account 'test_3@gmail.com'
+11/30/2024 11:22:36 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:22:39 PM: INFO: test_add_products_to_cart--> test_add_product_to_cart_from_products_page started
+11/30/2024 11:22:42 PM: INFO: test_add_products_to_cart--> test_add_product_to_cart_from_products_page completed
+
+11/30/2024 11:22:44 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:22:47 PM: INFO: test_add_products_to_cart--> test_add_out_of_stock_and_minimum_order_mandatory_product_to_cart started
+11/30/2024 11:23:07 PM: INFO: test_add_products_to_cart--> test_add_out_of_stock_and_minimum_order_mandatory_product_to_cart completed
+
+11/30/2024 11:23:09 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:23:12 PM: INFO: test_shopping_cart--> test_products_added_from_product_page_in_cart started
+11/30/2024 11:23:20 PM: INFO: no of products added is 1 and no of cart products is 1
+11/30/2024 11:23:20 PM: INFO: test_shopping_cart--> test_products_added_from_product_page_in_cart completed
+
+11/30/2024 11:23:22 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:23:25 PM: INFO: test_shopping_cart--> test_update_quantity_of_product_in_cart started
+11/30/2024 11:23:33 PM: INFO: test_shopping_cart--> test_update_quantity_of_product_in_cart completed
+
+11/30/2024 11:23:35 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:23:38 PM: INFO: test_checkout--> test_checkout_and_confirm_order_of_product started
+11/30/2024 11:23:53 PM: INFO: test_checkout--> test_checkout_and_confirm_order_of_product complted
+
+11/30/2024 11:23:55 PM: INFO: Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+11/30/2024 11:23:58 PM: INFO: test_checkout--> test_out_of_stock_products_should_not_be_checked_out started
+11/30/2024 11:24:07 PM: INFO: test_checkout--> test_out_of_stock_products_should_not_be_checked_out completed
+

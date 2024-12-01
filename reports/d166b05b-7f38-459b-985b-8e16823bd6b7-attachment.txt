@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:90 Running test in 'headless-parallel' mode on 'edge' in 'local' environment
+[32mINFO    [0m root:test_checkout.py:39 test_checkout--> test_out_of_stock_products_should_not_be_checked_out started
+[32mINFO    [0m root:test_checkout.py:48 test_checkout--> test_out_of_stock_products_should_not_be_checked_out completed
