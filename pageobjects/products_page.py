@@ -1,3 +1,5 @@
+import time
+
 from pageobjects.base_page import BasePage
 from pageobjects.product_specific_page import ProductSpecificPage
 
@@ -17,6 +19,7 @@ class ProductsPage(BasePage):
     # methods for basic actions
     def click_add_to_product(self, positions):
         for pos in positions:
+            time.sleep(1)
             self.elements_click_by_index(self.products_xpath, pos-1)
 
     def click_on_product_without_mandatory_fields(self):
