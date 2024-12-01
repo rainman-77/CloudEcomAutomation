@@ -23,12 +23,12 @@ pipeline {
                 sudo yum install python3-pip -y
                 sudo yum install docker -y
 
-                // Start Docker service only if not already running
+                # Start Docker service only if not already running
                 if ! sudo systemctl is-active --quiet docker; then
                     sudo systemctl start docker
                 fi
 
-                // Enable Docker to start on boot only if not already enabled
+                # Enable Docker to start on boot only if not already enabled
                 if ! sudo systemctl is-enabled --quiet docker; then
                     sudo systemctl enable docker
                 fi
