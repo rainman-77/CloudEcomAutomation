@@ -1,4 +1,5 @@
 import logging
+import time
 from datetime import datetime
 import pytest
 from tests.base_test import BaseTest
@@ -25,7 +26,9 @@ class TestShoppingCart(BaseTest):
         products_page = self.login_and_cleanup_cart_and_back_to_products_page(get_account)
         product_specific_page = products_page.click_on_product_with_mandatory_delivery_date()   # hp_product
         product_specific_page.calender_date_picker()  # mandatory field
+        time.sleep(1)
         product_specific_page.add_product_to_cart()
+        time.sleep(1)
         prod_name = [product_specific_page.get_product_name()]
         cart_page = self.navigate_to_shopping_cart()
         prod_compare_results = cart_page.does_product_present_in_cart(prod_name)

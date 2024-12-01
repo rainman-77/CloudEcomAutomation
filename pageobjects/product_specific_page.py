@@ -45,6 +45,7 @@ class ProductSpecificPage(BasePage):
         return self.get_element_text(self.product_name_xpath)
 
     def is_product_added_success_msg_displayed(self):
+        time.sleep(1)
         return self.element_display_status(self.product_added_success_msg_xpath)
 
     @staticmethod
@@ -90,7 +91,7 @@ class ProductSpecificPage(BasePage):
         self.element_click(self.cal_current_day_button_xpath)
 
         self.element_click(self.calender_time_picker_button_xpath)    # change to time view
-
+        time.sleep(2)
         _, _, cur_hr, cur_min = ProductSpecificPage.get_current_date_and_time()     # time_picker
         cal_hr = 0
         cal_min = 0

@@ -21,12 +21,14 @@ class CartPage(BasePage):
         total_prod = self.get_elements_count(self.cart_product_remove_button_xpath)
         if total_prod > 0:
             for x in range(total_prod-1, -1, -1):   # Start at total_prod-1, end at -1 (exclusive), step -1
+                time.sleep(1)
                 self.elements_click_by_index(self.cart_product_remove_button_xpath, x)
 
     def get_delivery_date(self):
         return self.get_elements_text_by_index(self.delivery_date_xpath, 1).split(":")[1]
 
     def is_product_out_of_stock_or_min_order_notified(self):
+        time.sleep(2)
         return self.get_element_text(self.out_of_stock_msg_xpath)
 
     def update_product_quantity_and_check(self, new_quantity):

@@ -25,7 +25,7 @@ class BaseTest:
         account_page = login_page.login_with_credentials(account["email"], account["password"])
 
         products_page = account_page.navigate_to_product_page()  # added this to avoid delay in removal if empty
-        products_page.add_product_and_confirm_success_msg([4])    # give product position in list
+        products_page.click_add_to_product([4])    # give product position in list
 
         cart_page = account_page.click_on_shopping_cart_button()
         cart_page.cleanup_products_from_cart()
