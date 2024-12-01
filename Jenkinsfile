@@ -21,6 +21,18 @@ pipeline {
                 sudo yum update -y
 		        sudo yum install python3 -y
                 sudo yum install python3-pip -y
+                sudo yum install docker -y
+
+                // Start Docker service only if not already running
+                if ! sudo systemctl is-active --quiet docker; then
+                    sudo systemctl start docker
+                fi
+
+                // Enable Docker to start on boot only if not already enabled
+                if ! sudo systemctl is-enabled --quiet docker; then
+                    sudo systemctl enable docker
+                fi
+
                 pip3 install -r requirements.txt
                 '''
             }
@@ -31,8 +43,8 @@ pipeline {
                 // Start Selenium Grid using Docker Compose
                     sh '''
                     docker-compose up -d
-		    echo "Waiting for Selenium Grid Hub to be available..."
-        	    for i in {1..15}; do
+		            echo "Waiting for Selenium Grid Hub to be available..."
+        	        for i in {1..15}; do
                      if curl -s http://localhost:4444/status | grep -q '"ready":true'; then
                       echo "Selenium Grid Hub is ready."
                       break
